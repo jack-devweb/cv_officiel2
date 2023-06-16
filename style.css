@@ -337,12 +337,12 @@ section {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: transparent; /* Au départ, la couleur est transparente */
+  background-color: transparent; /* Au dÃ©part, la couleur est transparente */
   transition: background-color 0.3s ease; /* Ajoutez une transition pour que le changement de couleur soit fluide */
 }
 
 .exp-info:hover::before {
-  background-color: rgba(201, 206, 255, 0.5); /* Lorsque survolé, changez la couleur (ici en rouge avec 50% d'opacité) */
+  background-color: rgba(201, 206, 255, 0.5); /* Lorsque survolÃ©, changez la couleur (ici en rouge avec 50% d'opacitÃ©) */
 }
 
 
@@ -428,9 +428,8 @@ a:hover {
 
 /* BODY */
 body {
-  background: linear-gradient(to bottom, #a8c2e5, #d5d5d5);
+  background: linear-gradient(to bottom, #e6f1ff, #d5d5d5);
   overflow-x: hidden;
-
 }
 
 /* IMAGES */
@@ -1292,8 +1291,8 @@ a:hover {
 }
 .page-container {
   height: 100vh;
-  position: relative; /* Ce code est nécessaire pour que le positionnement absolu des bulles fonctionne comme prévu. */
-  overflow: hidden; /* Ce code permet de s'assurer que les bulles qui sortent de l'écran ne créent pas de barres de défilement. */
+  position: relative; /* Ce code est nÃ©cessaire pour que le positionnement absolu des bulles fonctionne comme prÃ©vu. */
+  overflow: hidden; /* Ce code permet de s'assurer que les bulles qui sortent de l'Ã©cran ne crÃ©ent pas de barres de dÃ©filement. */
 }
 
 .container {
@@ -1474,32 +1473,6 @@ a:hover {
   position: relative;
 }
 
-.particle-pen {
-  position: absolute;
-  width: 200%;
-  aspect-ratio: 1;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  -webkit-mask: radial-gradient(white, transparent 65%);
-  z-index: -1;
-  opacity: var(--active, 0);
-  transition: opacity var(--transition);
-}
-
-.particle {
-  fill: white;
-  width: calc(var(--size, 0.25) * 1rem);
-  aspect-ratio: 1;
-  position: absolute;
-  top: calc(var(--y) * 1%);
-  left: calc(var(--x) * 1%);
-  opacity: var(--alpha, 1);
-  animation: float-out calc(var(--duration, 1) * 1s) calc(var(--delay) * -1s) infinite linear;
-  transform-origin: var(--origin-x, 1000%) var(--origin-y, 1000%);
-  z-index: -1;
-  animation-play-state: var(--play-state, paused);
-}
 
 .particle path {
   fill: hsl(0 0% 90%);
@@ -1518,15 +1491,6 @@ a:hover {
 :root {
   --active: 1; /* mettez ici la valeur que vous voulez */
 }
-.text {
-  transform: translate(2%, -6%);
-  letter-spacing: 0.01ch;
-  background: linear-gradient(90deg, hsl(0, calc((var(--active) * 100%) + 65%), 50%), hsl(0, calc((var(--active) * 100%) + 26%), 50%));
-  -webkit-background-clip: text;
-  color: transparent;
-  transition: background var(--transition);
-}
-
 
 .sparkle-button svg {
   inline-size: 1.25em;

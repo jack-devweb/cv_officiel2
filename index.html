@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
+    <meta http-equiv="Content-Language" content="fr">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta http-equiv="Content-Language" content="fr">
     <title>CV de Mateo Jacques</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="style.css" />
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <script src="script.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-toggler" href="#navbarToggleExternalContent" role="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </a>
-            <a class="navbar-brand" href="#"><img src="images/logo.jpeg" alt="logo"></a>
-        </div>
-    </nav>
-
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
             <h5 class="text-white h4">Jacques Mateo</h5>
+
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active link-light" href="#parcours-scolaire">PARCOURS SCOLAIRE</a>
+                    <a class="nav-link active link-light" aria-current="page" href="#parcours scolaire">PARCOURS
+                        SCOLAIRE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link-light" href="#experiences-professionnelles">EXPERIENCES PROFESSIONNELLES</a>
+                    <a class="nav-link link-light" href="#experiences-professionnelles">EXPERIENCES
+                        PROFESSIONNELLES</a>
                 </li>
+
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="realisation.php">MES REALISATIONS</a>
+                </li>
+
                 <li class="nav-item">
                     <a class="nav-link link-light" href="contact.html">CONTACT</a>
                 </li>
+              
+
             </ul>
             <span class="text-muted">Toggleable via the navbar brand.</span>
         </div>
-    </div>
 
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class=""><a class="navbar-br"><img src="images/logo.jpeg" alt="logo"></a></span>
+
+
+
+        </div>
+    </nav>
     <div class="fond">
         <img src="images/lac-montagne.jpg" alt="Background Image" class="background-image">
         <div class="contact">
@@ -55,255 +70,264 @@
             </div>
         </div>
     </div>
-
     <div class="presentation">
         <div class="prez">
             <h2>Qui suis-je ?</h2>
             <p>"Détenteur d'un bac professionnel en maintenance des systèmes mécaniques automatisés, j'ai travaillé
                 dans ce domaine pendant quelques années. J'ai ensuite orienté ma carrière vers la conduite d'engins
                 et travaillé pendant 13 ans dans la création et la rénovation des autoroutes françaises. Passionné
-                par le pilotage de drones en FPV, le montage vidéo et la programmation, je me tourne maintenant vers une carrière de développeur web."</p>
-            </div>
-            <div class="prez2">
-            <img src="images/phot moi sur pc.jpg" alt="Ma Photo sur PC">
-            </div>
-            </div>
-            <div id="desc" style="background-color: rgb(249, 235, 229); color: rgb(0, 0, 0);">
-                <h3>Je suis passionné de pilotage de drone et de montage vidéo. Je prends un immense plaisir à capturer des images aériennes uniques qui me permettent de créer des vidéos époustouflantes. Le pilotage de drone me permet d'explorer de nouveaux angles et de perspectives, de découvrir de nouveaux points de vue et de capturer des images qui seraient impossibles à obtenir autrement. Le montage vidéo, quant à lui, me permet de raconter des histoires à travers mes images, de les organiser de manière cohérente et de les rendre plus vivantes. C'est une combinaison parfaite pour moi car elle allie ma passion pour la technologie et la créativité. Je suis constamment en quête de nouvelles idées et de nouveaux défis pour améliorer mes compétences et créer des vidéos encore plus impressionnantes.</h3>
-            
-                <figure class="icon-cards mt-3">
-                    <div class="icon-cards__content" id="videos">
-                        <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <span class="h1">
-                                <iframe class="youtube-video" width="450" height="210" src="https://www.youtube.com/embed/R9ztguOw3gY"
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </span>
-                        </div>
-                        <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <span class="h1">
-                                <iframe class="youtube-video" width="450" height="210" src="https://www.youtube.com/embed/dV_IyupngtM"
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </span>
-                        </div>
-                        <div class="icon-cards__item d-flex align-items-center justify-content-center">
-                            <span class="h1">
-                                <iframe class="youtube-video" width="450" height="210" src="https://www.youtube.com/embed/mVDE7t_GON4"
-                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </span>
-                        </div>
-                    </div>
-                </figure>
-            
-                <div class="checkbox">
-                    <input class="d-none" id="toggle-animation" type="checkbox" checked>
-                    <label class="checkbox__checkbox" for="toggle-animation"></label>
+                par le pilotage de drones en FPV, le montage vidéo et la programmation, je me tourne maintenant vers
+                une carrière de développeur web."</a>
+        </div>
+        <div class="prez2">
+            <img src="images/phot moi sur pc.jpg">
+        </div>
+    </div>
+    </div>
+    <div class="foret">
+        <video class="img-fluid" autoplay loop muted>
+            <source src="https://mdbcdn.b-cdn.net/img/video/forest.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <!-- Carousel wrapper -->
+    <div id="desc" style="background-color: rgb(249, 235, 229); color: rgb(0, 0, 0);">
+        <h3>Je suis passionné de pilotage de drone et de montage vidéo. Je prends un immense plaisir à
+            capturer des images aériennes uniques qui me permettent de créer des vidéos époustouflantes
+            . Le pilotage de drone me permet d'explorer de nouveaux angles et de perspectives, de découvrir
+            de nouveaux points de vue et de capturer des images qui seraient impossibles à obtenir
+            autrement. Le montage vidéo, quant à lui, me permet de raconter des histoires à travers mes
+            images, de les organiser de manière cohérente et de les rendre plus vivantes.
+            C'est une combinaison parfaite pour moi car elle allie ma passion pour la technologie et la
+            créativité. Je suis constamment en quête de nouvelles idées et de nouveaux défis
+            pour améliorer mes compétences et créer des vidéos encore plus impressionnantes..
+
+            <figure class="icon-cards mt-3">
+                <div class="icon-cards__content" id="videos">
+                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span
+                            class="h1"><iframe class="youtube-video" width="450" height="210"
+                                src="https://www.youtube.com/embed/R9ztguOw3gY" title="YouTube video player"" title="
+                                YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe></span></div>
+                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">
+                            <iframe class="youtube-video" width="450" height="210"
+                                src="https://www.youtube.com/embed/dV_IyupngtM" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe></span></div>
+                    <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">
+                        <iframe width="450" height="210" src="https://www.youtube.com/embed/ToBVXD3RTns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span></div>
                 </div>
-            
-                <p>Logiciels utilisés:</p>
+            </figure>
+            <div class="checkbox">
+                <input class="d-none" id="toggle-animation" type="checkbox" checked />
+                <label class="checkbox__checkbox" for="toggle-animation"></label>
+            </div>
+            <p>logiciels utilisés:</p>
+            <ul>
+                <li>Ableton Filmora</li>
+                <li>Dji_Fly visual-studio-code</li>
+                <li>Wordpress Figma</li>
+                <li>Photoshop</li>
+                <li>Canva</li>
+                <li>Da vinci</li>
+
+            </ul>
+            <div class="icon_logiciel">
+                <img src="images/icons8-ableton.svg" alt="icon_abltn">
+                <img src="images/icons8-filmora.svg" alt="icon_flmra">
+                <img src="images/dji-seeklogo.com.svg" alt="icon_dji">
+                <img src="images/icons8-visual-studio-code-2019.svg" alt="icon_vsc">
+                <img src="images/icons8-wordpress.svg" alt="icon_wp">
+                <img src="images/icons8-figma.svg" alt="icon_fgm">
+                <img src="images/laragon-svgrepo-com.svg" alt="icon_lrg">
+                <img src="images/Canva_icon_2021.svg.png" alt="icon_abltn">
+        </h3>
+    </div>
+    </div>
+    <div class="container-a">
+        <div class="compi row">
+            <h3 class="col-12">Maîtrisés</h3>
+            <div class="col-12 col-sm-4">
+                <a href="https://www.sololearn.com/certificates/CT-9R2J6NTW">
+                    <img src="images/html-cer.png" alt="Certificat HTML" style="max-width:100%; height:auto;">
+                </a>
+            </div>
+            <div class="col-12 col-sm-4">
+                <a href="https://www.sololearn.com/certificates/CT-ZXEGN40R">
+                    <img src="images/css-cer.png" alt="Certificat CSS" style="max-width:100%; height:auto;">
+                </a>
+            </div>
+            <div class="col-12 col-sm-4">
+                <a href="https://www.sololearn.com/certificates/CT-HNTBI8TJ">
+                    <img src="images/php-cer.png" alt="Certificat PHP" style="max-width:100%; height:auto;">
+                </a>
+            </div>
+        </div>
+        <div class="back">
+            <h3>Apprentissage</h3>
+            <img src="images/téléchargement laravel-logo.png" alt="logo_PHP" style="max-width:50%; height:auto;">
+            <img src="images/javascript-svgrepo-com.svg" alt="logo-js" style="max-width:50%; height:auto;">
+            <img src="images/python-svgrepo-com.svg" alt="logo-js"style="width:100%; height:auto;">
+            <img src="images/mysql-svgrepo-com.svg" alt="logo-js"style="width:100%; height:auto;">
+        </div>
+    </div>
+    
+   <h2 class="formation">Formations</h2>
+
+    <section>
+        <div class="exp-info">
+            <h2>Formation developpeur-web full stack</h2>
+            <h3>16/09/2022-16/06/2023</h3>
+            <p> Centre de formation Handigital session Chambery</p>
+        </div>
+        <div class="exp-info" id="parcours scolaire">
+            <h2>Bac professionel des systèmes mecaniques automatisés</h2>
+            <h3>09/1999-06/2001</h3>
+            <p>lycée sainte Anne La motte-servolex</p>
+        </div>
+        </div>
+        <div class="exp-info">
+            <h2>BEP maintenance des systèmes mécaniques
+                automatisés</h2>
+            <h3>09/1997 - 06/1999</h3>
+            <p>lycée Sainte Anne La Motte-Servolex, La motte-servolex</p>
+        </div>
+    </section>
+    <h2>Expériences professionnelles</h2>
+    <div class="exp-container" id="experiences-professionnelles">
+        <div class="exp2">
+            <div class="exp-pro">
                 <ul>
-                    <li>Ableton Filmora</li>
-                    <li>Dji_Fly visual-studio-code</li>
-                    <li>Wordpress Figma</li>
-                    <li>Photoshop</li>
-                </ul>
-            
-                <div class="icon_logiciel">
-                    <img src="images/icons8-ableton.svg" alt="Ableton">
-                    <img src="images/icons8-filmora.svg" alt="Filmora">
-                    <img src="images/dji-seeklogo.com.svg" alt="DJI">
-                    <img src="images/icons8-visual-studio-code-2019.svg" alt="Visual Studio Code">
-                    <img src="images/icons8-wordpress.svg" alt="WordPress">
-                    <img src="images/icons8-figma.svg" alt="Figma">
-                    <img src="images/laragon-svgrepo-com.svg" alt="Laragon">
-                </div>
-            </div>
-            
-            <div class="container-a">
-                <div class="compi row">
-                    <h3 class="col-12">Maîtrisés</h3>
-                    <div class="col-12 col-sm-4">
-                        <a href="https://www.sololearn.com/certificates/CT-9R2J6NTW">
-                            <img src="images/html-cer.png" alt="Certificat HTML" style="max-width: 100%; height: auto;">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <a href="https://www.sololearn.com/certificates/CT-ZXEGN40R">
-                            <img src="images/css-cer.png" alt="Certificat CSS" style="max-width: 100%; height: auto;">
-                        </a>
-                    </div>
-                    <div class="col-12 col-sm-4">
-                        <a href="https://www.sololearn.com/certificates/CT-HNTBI8TJ">
-                            <img src="images/php-cer.png" alt="Certificat PHP" style="max-width: 100%; height: auto;">
-                        </a>
-                    </div>
-                </div>
-                <div class="back">
-                    <h3>Apprentissage</h3>
-                    <img src="images/téléchargement laravel-logo.png" alt="Logo PHP" style="max-width: 50%; height: auto;">
-                    <img src="images/javascript-svgrepo-com.svg" alt="Logo JavaScript" style="max-width: 50%; height: auto;">
-                    <img src="images/python-svgrepo-com.svg" alt="Logo Python" style="width: 100%; height: auto;">
-                    <img src="images/mysql-svgrepo-com.svg" alt="Logo MySQL" style="width: 100%; height: auto;">
-                </div>
-            </div>
-            
-            <h2 class="formation">Formations</h2>
-            
-            <section>
-                <div class="exp-info">
-                    <h2>Formation développeur-web full stack</h2>
-                    <h3>16/09/2022-16/06/2023</h3>
-                    <p>Centre de formation Handigital session Chambery</p>
-                </div>
-                <div class="exp-info" id="parcours-scolaire">
-                    <h2>Bac professionnel des systèmes mécaniques automatisés</h2>
-                    <h3>09/1999-06/2001</h3>
-                    <p>Lycée Sainte Anne La Motte-Servolex</p>
-                </div>
-                <div class="exp-info">
-                    <h2>BEP maintenance des systèmes mécaniques automatisés</h2>
-                    <h3>09/1997 - 06/1999</h3>
-                    <p>Lycée Sainte Anne La Motte-Servolex, La Motte-Servolex</p>
-                </div>
-            </section>
-            
-            <h2>Expériences professionnelles</h2>
-            
-            <div class="exp-container" id="experiences-professionnelles">
-                <div class="exp2">
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Stagiaire Développeur Web Front-end</h3>
-                                <h4>03/2023 - 06/2023</h4>
-                                <p>Agence web E-licom, Chambery<br>
-                                    Développement d'applications web et web mobile</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Ouvrier routier</h3>
-                                <h4>01/2006 - 05/2020</h4>
-                                <p>Eiffage route, Voglans<br>
-                                    Conduite d'engins de chantier, terrassement, VRD, application des enrobés.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Electricien entreprise travaux public</h3>
-                                <h4>06/2005 - 10/2005</h4>
-                                <p>Bronnaz, Barberaz 73000<br>
-                                    Mise en place des réseaux électriques moyenne tension</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Régleur</h3>
-                                <h4>03/2003 - 04/2005</h4>
-                                <p>Bosh systèmes de freinage sas Levier 25720, Levier 25720<br>
-                                    Effectuer le réglage de machines industrielles</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Magasinier entreprise</h3>
-                                <h4>10/2002 - 02/2003</h4>
-                                <p>Form-plast Chantrans 25330, Chantrans 25330<br>
-                                    Effectuer la gestion des stocks de matière première prévu pour la production.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Monteur mécanicien</h3>
-                                <h4>10/2001 - 06/2002</h4>
-                                <p>Entreprise Jean Michel Gresy/Aix 73100, Gresy/Aix<br>
-                                    Effectuer le montage de machine industrielle de blanchisserie</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-pro">
-                        <ul>
-                            <li>
-                                <h3>Monteur mécanicien</h3>
-                                <h4>08/2001 - 09/2001</h4>
-                                <p>Entreprise Alsthom, Aix les bains<br>
-                                    Effectuer le montage de transformateur électrique</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <h2>Hobbies</h2>
-            
-            <div class="slider">
-                <figure>
-                    <img src="images/materiel.webp" alt>
-                    <img src="images/ride.jpg" alt>
-                    <img src="images/drone-gp.jpg" alt>
-                    <img src="images/Mavic 3.jpg" alt>
-                    <img src="images/streetart.jpg" alt>
-                    <img src="images/savoie.jpg" alt>
-                    <img src="images/piles-de-mer-roche-moule.jpg" alt>
-                    <img src="images/lac.jpg" alt>
-                    <img src="images/tarentaise.jpg" alt>
-                    <img src="images/coeur_montagne.avif" alt>
-                </figure>
-            </div>
-            
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
-            
-            <div class="hobbies">
-                <ul>
-                    <li>Pilotage de drone</li>
-                    <li>Sport de glisse</li>
-                    <li>Jeux vidéo</li>
-                    <li>Programmation</li>
+                    <li>
+                        <h3>Stagiaire Développeur Web Front-end</h3>
+                        <h4>03/2023 - 06/2023</h4>
+                        <p>Agence web E-licom, Chambery<br>
+                            Developpement d'applications web et web mobile</p>
+                    </li>
                 </ul>
             </div>
-            
-            <footer>
-                <div class="social-buttons">
-                    <a href="mailto:jacques.mateo@sfr.fr" class="social-button social-button--mail" aria-label="SFR">
-                        <i class="fab fa-sfr"></i>
-                        <img src="images/icons8-mail.svg" style="float: right;">
-                    </a>
-            
-                    <a href="https://www.linkedin.com/in/jacques-mateo/" class="social-button social-button--linkedin"
-                        aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                        <img src="images/LinkedIn_icon_circle.svg" style="float: right;">
-                    </a>
-            
-                    <a href="https://github.com/jack-devweb/mon_cv" class="social-button social-button--github"
-                        aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                        <img src="images/icons8-github-80.svg" style="float: right;">
-                    </a>
-                </div>
-            </footer>
-            
-            <script src="https://www.youtube.com/iframe_api"></script>
-            <script src="script.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-                crossorigin="anonymous"></script>
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Ouvrier routier</h3>
+                        <h4>01/2006 - 05/2020</h4>
+                        <p>Eiffage route, Voglans<br>
+                            Conduite d'engins de chantier, terrassement, VRD, application des enrobés.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Electricien entreprise travauxpublic</h3>
+                        <h4>06/2005 - 10/2005</h4>
+                        <p>Bronnaz, Barberaz 73000<br>
+                            Mise en place des réseaux électriques moyenne tension</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Régleur</h3>
+                        <h4>03/2003 - 04/2005</h4>
+                        <p>Bosh systèmes de freinage sas Levier 25720, Levier 25720<br>
+                            Effectuer le réglage de machines industrielles</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Magasinier entreprise</h3>
+                        <h4>10/2002 - 02/2003</h4>
+                        <p>Form-plast Chantrans 25330, Chantrans 25330<br>
+                            Effectuer la gestion des stocks de matière première prévu pour la production.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Monteur mécanicien</h3>
+                        <h4>10/2001 - 06/2002</h4>
+                        <p>Entreprise Jean Michel Gresy/Aix 73100, Gresy/ Aix<br>
+                            Effectuer le montage de machine industrielle de blanchisserie</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="exp-pro">
+                <ul>
+                    <li>
+                        <h3>Monteur mécanicien</h3>
+                        <h4>08/2001 - 09/2001</h4>
+                        <p>Entreprise Alsthom, Aix les bains<br>
+                            Effectuer le montage de transformateur électrique</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <h2>Hobbies</h2>
+    <div class="slider">
+        <figure>
+            <img src="images/materiel.webp" alt>
+            <img src="images/ride.jpg" alt>
+            <img src="images/drone-gp.jpg" alt>
+            <img src="images/Mavic 3.jpg" alt>
+            <img src="images/streetart.jpg" alt>
+            <img src="images/savoie.jpg" alt>
+            <img src="images/piles-de-mer-roche-moule.jpg" alt>
+            <img src="images/lac.jpg" alt>
+            <img src="images/tarentaise.jpg" alt>
+            <img src="images/coeur_montagne.avif" alt>
+        </figure>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+
+    <div class="hobbies">
+        <ul>
+            <li>Pilotage de drone </li>
+            <li>Sport de glisses</li>
+            <li>Jeux-video</li>
+            <li>Programmation</li>
+        </ul>
+    </div>
+    <footer>
+        <div class="social-buttons">
+            <a href="mailto:jacques.mateo@sfr.fr" class="social-button social-button--mail" aria-label="sfr.fr">
+                <i class="fab fa-sfr"></i>
+                <img src="images/icons8-mail.svg" style="float: right;">
+            </a>
+
+            <a href="https://www.linkedin.com/in/jacques-mateo/" class="social-button social-button--linkedin"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+                <img src="images/LinkedIn_icon_circle.svg" style="float: right;">
+            </a>
+            <a href="https://github.com/jack-devweb/mon_cv" class="social-button social-button--github"
+                aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <img src="images/icons8-github-80.svg" style="float: right;">
+            </a>
+        </div>
+    </footer>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
-</html>            
+
+</html>
